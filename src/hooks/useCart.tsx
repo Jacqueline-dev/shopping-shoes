@@ -26,7 +26,7 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
      const storagedCart = localStorage.getItem('@RocketShoes:cart');
 
      if (storagedCart) {
-       return JSON.parse(storagedCart);
+       return JSON.parse(storagedCart); 
    }
 
     return [];
